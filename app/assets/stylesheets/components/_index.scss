@@ -2,10 +2,12 @@
 @import "alert";
 @import "avatar";
 @import "navbar";
+
 .card-trip {
   overflow: hidden;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin: 16px;
 }
 
 .card-trip > img {
@@ -41,3 +43,11 @@
   top: -20px;
   width: 40px;
 }
+
+.unlink {
+  text-decoration: none;
+  a {
+  color: white;
+  }
+}
+
