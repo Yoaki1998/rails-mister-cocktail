@@ -1,7 +1,13 @@
 <h1>Cocktails List</h1>
 <% @cocktails.each do |x| %>
-  <ul>
-    <li><%= x.name %> - <%= link_to "show", cocktail_path(x) %></li>
-  </ul>
+<div class="card-trip">
+  <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" />
+  <div class="card-trip-infos">
+    <div>
+      <h2><%= x.name %></h2>
+      <p><%= link_to "show", cocktail_path(x) %></p>
+    </div>
+  </div>
+</div>
 <% end %>
-<%= link_to "New", new_cocktail_path %>
+<p class="btn btn-primary"><%= link_to "New", new_cocktail_path %></p>
